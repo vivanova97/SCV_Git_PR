@@ -16,3 +16,10 @@ To do this, use the following commands:
 git config --global user.name Your Name
 git config --global user.email your_email@example.com
 ```
+## 4. Initializing a Repository
+Create a directory for the project. 
+Go to the new directory via your terminal.
+In the terminal, type in command `git init`.  
+Next, type command `git add .` to add the files to the next commit.
+Finally, type `git commit -am "your comment"`.
+Congratulations, changes to your directory are now being tracked by Git!
