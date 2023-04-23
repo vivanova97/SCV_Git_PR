@@ -23,3 +23,10 @@ In the terminal, type in command `git init`.
 Next, type command `git add .` to add the files to the next commit.
 Finally, type `git commit -am "your comment"`.
 Congratulations, changes to your directory are now being tracked by Git!
+
+## 5. Saving Changes Made to Repository
+Use the command `git add file_name` to add file changes to the next commit. 
+If you have several files that you want to add to the commit, you may use the command `git add .` to stage all files.
+After the `git add` command, you must create a commit to affix the changes. To do this, use `git commit -m "your comment"`.
+These two commands may be combined into one. To combine `git add .` and `git commit` into one command use 
+`git commit -am "your comment" `.
