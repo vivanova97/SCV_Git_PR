@@ -29,4 +29,12 @@ Use the command `git add file_name` to add file changes to the next commit.
 If you have several files that you want to add to the commit, you may use the command `git add .` to stage all files.
 After the `git add` command, you must create a commit to affix the changes. To do this, use `git commit -m "your comment"`.
 These two commands may be combined into one. To combine `git add .` and `git commit` into one command use 
-`git commit -am "your comment" `.
+`git commit -am "your comment" `.  
+
+## 6. Viewing Your Commit History
+To view all the commits you made previously you may use `git log`. 
+This command will show the hash, author, date, and comment for each commit.
+To view the shortened version of commit history, use `git log --oneline`. This command will show just the hash of the commit and the comment associated with it.
+If you want to view just the last two commits, you may use `git log --oneline -2`.
+You may also view the changes made within each commit by using `git log --oneline -p`.
+
