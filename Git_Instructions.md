@@ -29,8 +29,9 @@ Use the command `git add file_name` to add file changes to the next commit.
 If you have several files that you want to add to the commit, you may use the command `git add .` to stage all files.
 After the `git add` command, you must create a commit to affix the changes. To do this, use `git commit -m "your comment"`.
 These two commands may be combined into one. To combine `git add .` and `git commit` into one command use 
-`git commit -am "your comment" `.  To see which files have changes that are staged for the next commit use `git status`. 
-
+`git commit -am "your comment" `.  To see the difference between the current file and the last commit (or in other words to see the changes
+that need to be staged ) use `git diff`.
+To see which files have changes that are staged for the next commit use `git status`.
 ## 6. Viewing Your Commit History
 To view all the commits you made previously you may use `git log`. 
 This command will show the hash, author, date, and comment for each commit.
@@ -41,4 +42,4 @@ You may also view the changes made within each commit by using `git log --onelin
 ## 7. Moving Between the Commits
 You may visit each commit to see what the file looked like at the time of the commit. To do this, use the `git switch` or the `git checkout` command followed by the desired commit's hash. 
 The hash is a combination of symbols that helps identify the commit and can be found using the `git log` command. The first four symbols are enough for git switch and git checkout to locate the commit. 
-
+To continue working on your file, you must return to the latest commit by using either `git switch -` or `git checkout master`.
