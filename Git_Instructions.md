@@ -68,3 +68,6 @@ Alternatively, you can use the git checkout command with the -b option to create
 
 After creating the new branch, you can make changes to the files in your working directory, stage them using git add, and commit them using git commit. These changes will be recorded in the new branch you just created.
 
+## 10. Merging and Resolving Conflicts
+
+
