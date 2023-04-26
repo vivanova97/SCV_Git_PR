@@ -79,7 +79,15 @@ In Git, merging is the process of combining changes from one branch into another
 
 4. After resolving any conflicts, stage the changes using git add and commit them using git commit.
 
-
+## 11. Deleting Branches
+1. **To delete a merged branch:** Use the git *branch -d* command followed by the name of the branch you merged in to delete the merged branch if it's no longer needed. For example, to delete a branch named "feature-branch" after it has been merged into the current branch, use the command: 
+```
+git branch -d feature-branch
+```
+2. **To delete a branch that has not been merged:** Use the *git branch -D* command followed by the name of the branch.  For example, 
+```
+git branch -D feature-branch
+```
 
 
 
