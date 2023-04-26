@@ -22,7 +22,7 @@ Create a directory for the project.
 Go to the new directory via your terminal.
 In the terminal, type in command `git init`.  
 Next, type command `git add .` to add the files to the next commit.
-Finally, type `git commit -am "your comment"`.
+Finally, type `git commit -m "your comment"`.
 Congratulations, changes to your directory are now being tracked by Git!
 
 ## 5. Saving Changes Made to Repository
@@ -48,4 +48,10 @@ To continue working on your file, you must return to the latest commit by using 
 ## 8. Ignoring Files
 A .gitignore file is used to tell Git which files or directories it should ignore and not track changes for.
 
-Git is a version control system that helps manage changes to files and directories over time.
+Git is a version control system that helps manage changes to files and directories over time. Sometimes, however, there are files or directories in a project that you don't want Git to track, such as temporary files, log files, build artifacts, or sensitive data like passwords or API keys.
+
+By adding these files or directories to the .gitignore file, you can tell Git to ignore them and not include them in the commit history. This helps keep your repository clean and prevents unnecessary clutter and conflicts.
+
+You may add a .gitignore file to your project using the interface of your preferred IDE (Visual Studio Code, PyCharm, etc.) or your terminal. To create a .gitignore file though your terminal, navigate to your project directory via the terminal and use `touch .gitignore`. 
+
+To add files or directories to your .gitignore file type `echo filename >> .gitignore`.
