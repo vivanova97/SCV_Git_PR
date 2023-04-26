@@ -44,3 +44,5 @@ You may also view the changes made within each commit by using `git log --onelin
 You may visit each commit to see what the file looked like at the time of the commit. To do this, use the `git switch` or the `git checkout` command followed by the desired commit's hash. 
 The hash is a combination of symbols that helps identify the commit and can be found using the `git log` command. The first four symbols are enough for git switch and git checkout to locate the commit. 
 To continue working on your file, you must return to the latest commit by using either `git switch -` or `git checkout master`.
+
+## 8. Ignoring Files
