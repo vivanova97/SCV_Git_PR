@@ -1,4 +1,4 @@
-![Git_Github Logo](Git_Github.png)
+![Git_Github Logo](Images/Git_Github.png)
 
 # Instructions for Working With Git and GitHub
 ## 1. Check if Git is installed 
@@ -55,3 +55,16 @@ By adding these files or directories to the .gitignore file, you can tell Git to
 You may add a .gitignore file to your project using the interface of your preferred IDE (Visual Studio Code, PyCharm, etc.) or your terminal. To create a .gitignore file though your terminal, navigate to your project directory via the terminal and use `touch .gitignore`. 
 
 To add files or directories to your .gitignore file type `echo filename >> .gitignore`.
+
+## 9. Creating Branches
+To create a new branch:
+1. Make sure you're in the branch you want to create the new branch from. You can use the `git branch` command to see which branch you're currently on. The branch with an asterisk (*) next to its name is the branch you're currently on.
+
+2. Use the git branch command followed by the name of the new branch to create the new branch. For example, to create a new branch named "feature-branch", use the command: `git branch feature-branch`
+
+3. Switch to the new branch using the git checkout command followed by the name of the new branch. For example, to switch to the "feature-branch" branch, use the command: `git checkout feature-branch`
+
+Alternatively, you can use the git checkout command with the -b option to create and switch to the new branch in a single command. For example, to create and switch to a new branch named "feature-branch" in one step, use the command: `git checkout -b feature-branch`
+
+After creating the new branch, you can make changes to the files in your working directory, stage them using git add, and commit them using git commit. These changes will be recorded in the new branch you just created.
+
