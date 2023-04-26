@@ -69,5 +69,21 @@ Alternatively, you can use the git checkout command with the -b option to create
 After creating the new branch, you can make changes to the files in your working directory, stage them using git add, and commit them using git commit. These changes will be recorded in the new branch you just created.
 
 ## 10. Merging and Resolving Conflicts
+In Git, merging is the process of combining changes from one branch into another. To merge a branch into another branch:
+
+1. Make sure you're in the branch you want to merge the changes into. You can use the git branch command to see which branch you're currently on, and the git checkout command to switch to the branch you want to merge into.
+
+2. Use the git merge command followed by the name of the branch you want to merge into the current branch. For example, to merge a branch named "feature-branch" into the current branch, use the command: `git merge feature-branch`
+
+3. Git will merge the changes from the other branch into the current branch. If there are any conflicts, Git will tell you and ask you to resolve them manually. You can use a text editor to open the conflicting files, resolve the conflicts, and save the changes.
+
+4. After resolving any conflicts, stage the changes using git add and commit them using git commit.
+
+
+
+
+
+
+
 
 
