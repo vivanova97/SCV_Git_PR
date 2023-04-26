@@ -1,5 +1,6 @@
-# Instructions for Working With Git and GitHub
+![Git_Github Logo](Git_Github.png)
 
+# Instructions for Working With Git and GitHub
 ## 1. Check if Git is installed 
 In your terminal, use command `git --version`. 
 If Git is installed, information with the version of the program will appear. 
