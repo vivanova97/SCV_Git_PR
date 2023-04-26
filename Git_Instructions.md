@@ -46,3 +46,6 @@ The hash is a combination of symbols that helps identify the commit and can be f
 To continue working on your file, you must return to the latest commit by using either `git switch -` or `git checkout master`.
 
 ## 8. Ignoring Files
+A .gitignore file is used to tell Git which files or directories it should ignore and not track changes for.
+
+Git is a version control system that helps manage changes to files and directories over time.
