@@ -1,10 +1,10 @@
 ![Git_Github Logo](Images/Git_Github.png)
 
 # Instructions for Working With Git and GitHub
-## 1. Check if Git is installed 
+## 1. Check if Git is Installed 
 In your terminal, use command `git --version`. 
 If Git is installed, information with the version of the program will appear. 
-If it is not installed, an error message will appear.
+If it is not installed, you will get an error message.
 
 ## 2. Install Git
 Download the last version of Git from https://git-scm.com/downloads.
@@ -19,34 +19,37 @@ git config --global user.email your_email@example.com
 ```
 ## 4. Initializing a Repository
 Create a directory for the project. 
-Go to the new directory via your terminal.
-In the terminal, type in command `git init`.  
-Next, type command `git add .` to add the files to the next commit.
-Finally, type `git commit -m "your comment"`.
-Congratulations, changes to your directory are now being tracked by Git!
+Go to the project directory via your terminal.
+In the terminal, type in the command `git init`.
+Congratulations, changes to your directory will now be tracked by Git!
 
 ## 5. Saving Changes Made to Repository
-Use the command `git add file_name` to add file changes to the next commit. 
+Use the command `git add <filename>` to add a file's changes to the next commit. 
 If you have several files that you want to add to the commit, you may use the command `git add .` to stage all files.
-After the `git add` command, you must create a commit to affix the changes. To do this, use `git commit -m "your comment"`.
-These two commands may be combined into one. To combine `git add .` and `git commit` into one command use 
-`git commit -am "your comment" `.  To see the difference between the current file and the last commit (or in other words to see the changes
+After you have staged the changes using git add, you can use the **git commit** command to commit them to the repository. For example, you can use the command `git commit -m "your comment"` to create a new commit with a commit message. 
+
+**git add** and **git commit** may be combined into one command. To combine them use 
+`git commit -am <your comment> `.  
+
+To see the difference between the current file and the last commit (or in other words to see the changes
 that need to be staged ) use `git diff`.
 To see which files have changes that are staged for the next commit use `git status`.
 ## 6. Viewing Your Commit History
-To view all the commits you made previously you may use `git log`. 
+To view all the commits you previously made you may use `git log`. 
 This command will show the hash, author, date, and comment for each commit.
 To view the shortened version of commit history, use `git log --oneline`. This command will show just the hash of the commit and the comment associated with it.
-If you want to view just the last two commits, you may use `git log --oneline -2`.
+
+If you want to view just the last two commits, you may use `git log --oneline -2`. 
 You may also view the changes made within each commit by using `git log --oneline -p`.
 
 ## 7. Moving Between the Commits
 You may visit each commit to see what the file looked like at the time of the commit. To do this, use the `git switch` or the `git checkout` command followed by the desired commit's hash. 
 The hash is a combination of symbols that helps identify the commit and can be found using the `git log` command. The first four symbols are enough for git switch and git checkout to locate the commit. 
+
 To continue working on your file, you must return to the latest commit by using either `git switch -` or `git checkout master`.
 
 ## 8. Ignoring Files
-A .gitignore file is used to tell Git which files or directories it should ignore and not track changes for.
+A **.gitignore** file is used to tell Git which files or directories it should ignore and not track changes for.
 
 Git is a version control system that helps manage changes to files and directories over time. Sometimes, however, there are files or directories in a project that you don't want Git to track, such as temporary files, log files, build artifacts, or sensitive data like passwords or API keys.
 
@@ -64,7 +67,10 @@ To create a new branch:
 
 3. Switch to the new branch using the git checkout command followed by the name of the new branch. For example, to switch to the "feature-branch" branch, use the command: `git checkout feature-branch`
 
-Alternatively, you can use the git checkout command with the -b option to create and switch to the new branch in a single command. For example, to create and switch to a new branch named "feature-branch" in one step, use the command: `git checkout -b feature-branch`
+Alternatively, you can use the git checkout command with the -b option to create and switch to the new branch in a single command. For example, to create and switch to a new branch named "feature-branch" in one step, use the command: 
+```
+git checkout -b feature-branch
+```
 
 After creating the new branch, you can make changes to the files in your working directory, stage them using git add, and commit them using git commit. These changes will be recorded in the new branch you just created.
 
@@ -75,7 +81,8 @@ In Git, merging is the process of combining changes from one branch into another
 
 2. Use the git merge command followed by the name of the branch you want to merge into the current branch. For example, to merge a branch named "feature-branch" into the current branch, use the command: `git merge feature-branch`
 
-3. Git will merge the changes from the other branch into the current branch. If there are any conflicts, Git will tell you and ask you to resolve them manually. You can use a text editor to open the conflicting files, resolve the conflicts, and save the changes.
+3. Git will merge the changes from the other branch into the current branch. If there are any conflicts, Git will tell you and ask you to resolve them manually. You can use a text editor to open the conflicting files.
+Look for the merge conflict markers (<<<<<<<, =======, and >>>>>>>) in the file, and edit the file to resolve the conflicts.
 
 4. After resolving any conflicts, stage the changes using git add and commit them using git commit.
 
