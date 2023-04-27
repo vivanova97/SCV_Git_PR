@@ -74,6 +74,12 @@ git checkout -b feature-branch
 
 After creating the new branch, you can make changes to the files in your working directory, stage them using git add, and commit them using git commit. These changes will be recorded in the new branch you just created.
 
+To quickly visualize the relationships between the different branches and commits in the repository use the following command :
+```
+git log --oneline --graph
+```
+
+
 ## 10. Merging and Resolving Conflicts
 In Git, merging is the process of combining changes from one branch into another. To merge a branch into another branch:
 
