@@ -136,7 +136,24 @@ To create a remote repository on GitHub, you can follow these steps:
 
 That's it! You have now created a remote repository on GitHub. 
 
-
+## 14. After Creating Remote Repository: Next Steps
+After creating a remote repository on Github, you can either:
+1. **Create a new repository** on the command line and tie it to the remote repository:
+```
+echo "# seminar3" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/vivanova97/seminar3.git
+git push -u origin main
+```
+2. Or, **tie an existing repository** from the command line:
+```
+git remote add origin https://github.com/vivanova97/seminar3.git
+git branch -M main
+git push -u origin main
+```
 
 
 
