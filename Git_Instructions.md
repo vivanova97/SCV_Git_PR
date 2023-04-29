@@ -176,3 +176,40 @@ Replace <branch name> with the name of the branch you want to pull changes from.
 3. If there are any conflicts between the local and remote repositories, you'll need to resolve them manually. The `git status` command will show you which files have conflicts.
 4. Once you have resolved any conflicts, use the `git add` and `git commit` commands to commit the changes to your local repository.
 
+## 17. Creating Pull Requests
+### What is a **pull request**?
+A pull request is a feature of Git and GitHub that allows developers to propose changes to a repository hosted on GitHub. It is a way for developers to collaborate and contribute to a project, even if they do not have direct access to the original repository.
+
+When you create a pull request, you are essentially asking the owner(s) of the repository to pull in your changes and merge them into their codebase. Pull requests are commonly used in open source projects to allow contributors to submit their changes and have them reviewed and accepted by the project maintainers.
+
+Pull requests typically include a description of the changes, as well as any relevant discussion or context around the changes. They can also include comments and feedback from other contributors or maintainers.
+
+Once a pull request is submitted, the repository owner or maintainers can review the changes, provide feedback, and decide whether to accept or reject the pull request. If accepted, the changes will be merged into the repository and become a part of the codebase.
+
+### How to create a pull request?
+To create a pull request on GitHub, you can follow these steps:
+1. Fork the repository you want to contribute to on GitHub. This will create a copy of the repository in your own account.
+2. Clone the forked repository to your local machine using the `git clone` command:
+```
+git clone https://github.com/<your-username>/<repository>.git
+```
+Replace <your-username> with your GitHub username and <repository> with the name of the repository you forked.
+3. Create a new branch for your changes using the `git checkout` command:
+```
+git checkout -b <branch-name>
+```
+Replace <branch-name> with a descriptive name for your branch.
+4. Make your changes to the code and commit them using the `git add` and `git commit` commands:
+```
+git add .
+git commit -m "A descriptive commit message"
+```
+5. Push your changes to your forked repository on GitHub using the `git push` command:
+```
+git push origin <branch-name>
+```
+6. Go to the original repository on GitHub and click on the "Pull requests" tab.
+7. Click on the "New pull request" button.
+8. Select the base branch and the compare branch. The base branch is the branch you want to merge your changes into, and the compare branch is the branch containing your changes.
+9. Review the changes in the pull request and add a description of the changes if necessary.
+10. Click on the "Create pull request" button to submit your pull request.
