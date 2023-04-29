@@ -154,6 +154,25 @@ git remote add origin https://github.com/vivanova97/seminar3.git
 git branch -M main
 git push -u origin main
 ```
+## 16. Synchronize Changes Between a Local and Remote Repository
+Pushing and pulling are fundamental Git commands used to synchronize changes between a local and remote repository on GitHub. Here are the steps to push and pull changes using Git:
 
+### Pushing Changes:
+1. First, navigate to the local repository on your computer that you want to push to GitHub.
+2. Make sure you have committed all changes you want to push using the `git commit` command.
+3. Push your changes to GitHub using the `git push` command:
+```
+git push -u origin <branch name>
+```
+Replace <branch name> with the name of the branch you want to push. If you are pushing changes to the main branch, you can leave out the branch name.
 
+### Pulling Changes:
+1. First, navigate to the local repository on your computer that you want to pull changes into.
+2. Use the `git pull` command to fetch and merge changes from the remote repository:
+```
+git pull origin <branch name>
+```
+Replace <branch name> with the name of the branch you want to pull changes from.
+3. If there are any conflicts between the local and remote repositories, you'll need to resolve them manually. The `git status` command will show you which files have conflicts.
+4. Once you have resolved any conflicts, use the `git add` and `git commit` commands to commit the changes to your local repository.
 
