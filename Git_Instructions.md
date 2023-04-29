@@ -106,13 +106,9 @@ git branch -D feature-branch
 To create an account on GitHub, you can follow these steps:
 
 1. Go to the GitHub homepage at https://github.com.
-
 2. Click on the "Sign up" button in the upper right corner of the page.
-
 3. Enter your desired username, email address, and password in the fields provided.
-
 4. Choose a plan. GitHub offers a free plan for individual users and small teams, as well as paid plans for larger teams and enterprises.
-
 5. Complete the registration process by following the prompts. You may be asked to verify your email address and provide additional information about yourself.
 
 Once your account is created, you can set up your profile by adding a profile picture, bio, and other details. You can also start creating repositories and collaborating with others on GitHub.
@@ -121,17 +117,11 @@ Once your account is created, you can set up your profile by adding a profile pi
 To create a remote repository on GitHub, you can follow these steps:
 
 1. Log in to your GitHub account.
-
 2. Click on the "+" sign in the top right corner of the page and select "New repository" from the drop-down menu.
-
 3. In the "Create a new repository" page, enter a name for your repository. This should be a short, descriptive name that indicates the purpose of your repository.
-
 4. (Optional) Enter a description for your repository. This can be a longer description that provides more information about your repository.
-
 5. Choose whether you want your repository to be public or private. Public repositories are visible to everyone on GitHub, while private repositories are only visible to you and any collaborators you add.
-
 6. (Optional) Choose to initialize your repository with a README, license, or .gitignore file. A README is a file that provides information about your project, while a license and .gitignore file can help you manage your code and protect your intellectual property.
-
 7. Click on the "Create repository" button to create your new repository.
 
 That's it! You have now created a remote repository on GitHub. 
@@ -165,6 +155,7 @@ Pushing and pulling are fundamental Git commands used to synchronize changes bet
 git push -u origin <branch name>
 ```
 Replace <branch name> with the name of the branch you want to push. If you are pushing changes to the main branch, you can leave out the branch name.
+4. GitHub will prompt you to enter your username and password to authenticate your push. If you have set up SSH authentication, you won't need to enter your password.
 
 ### Pulling Changes:
 1. First, navigate to the local repository on your computer that you want to pull changes into.
