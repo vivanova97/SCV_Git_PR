@@ -103,6 +103,19 @@ git branch -D feature-branch
 ```
 
 ## 12. Creating an Account on Github
+To create an account on GitHub, you can follow these steps:
+
+1. Go to the GitHub homepage at https://github.com.
+
+2. Click on the "Sign up" button in the upper right corner of the page.
+
+3. Enter your desired username, email address, and password in the fields provided.
+
+4. Choose a plan. GitHub offers a free plan for individual users and small teams, as well as paid plans for larger teams and enterprises.
+
+5. Complete the registration process by following the prompts. You may be asked to verify your email address and provide additional information about yourself.
+
+Once your account is created, you can set up your profile by adding a profile picture, bio, and other details. You can also start creating repositories and collaborating with others on GitHub.
 
 
 
